@@ -29,6 +29,10 @@
 		A07025B62C278C73001C8E96 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A07025B52C278C73001C8E96 /* FirebaseMessaging */; };
 		A07025B82C278C73001C8E96 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A07025B72C278C73001C8E96 /* FirebaseStorage */; };
 		A07025BA2C278C73001C8E96 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A07025B92C278C73001C8E96 /* FirebaseStorageCombine-Community */; };
+		A07025C02C279929001C8E96 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025BF2C279929001C8E96 /* Track.swift */; };
+		A07025C22C27994C001C8E96 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C12C27994C001C8E96 /* Playlist.swift */; };
+		A07025C42C279974001C8E96 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C32C279974001C8E96 /* Artist.swift */; };
+		A07025C62C2799B2001C8E96 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C52C2799B2001C8E96 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +67,11 @@
 		A070259C2C278B6F001C8E96 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		A070259E2C278BA9001C8E96 /* GoogleService-Info (14).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (14).plist"; path = "../../../../Downloads/GoogleService-Info (14).plist"; sourceTree = "<group>"; };
 		A07025A22C278C2D001C8E96 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		A07025BB2C278C9E001C8E96 /* GoogleService-Info (14).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (14).plist"; sourceTree = "<group>"; };
+		A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A07025BF2C279929001C8E96 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		A07025C12C27994C001C8E96 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		A07025C32C279974001C8E96 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		A07025C52C2799B2001C8E96 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,14 +133,14 @@
 		A07025532C277613001C8E96 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				A07025BC2C2798D5001C8E96 /* App */,
 				A07025A12C278C25001C8E96 /* Service */,
-				A07025542C277613001C8E96 /* MusicAppApp.swift */,
 				A07025562C277613001C8E96 /* ContentView.swift */,
 				A07025802C277677001C8E96 /* Model */,
 				A07025582C277614001C8E96 /* Assets.xcassets */,
 				A070259B2C278B65001C8E96 /* Keys */,
 				A070255A2C277614001C8E96 /* Preview Content */,
-				A07025BB2C278C9E001C8E96 /* GoogleService-Info (14).plist */,
+				A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -167,6 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				A070257E2C277638001C8E96 /* User.swift */,
+				A07025BF2C279929001C8E96 /* Track.swift */,
+				A07025C52C2799B2001C8E96 /* Album.swift */,
+				A07025C12C27994C001C8E96 /* Playlist.swift */,
+				A07025C32C279974001C8E96 /* Artist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +197,14 @@
 				A07025A22C278C2D001C8E96 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A07025BC2C2798D5001C8E96 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A07025542C277613001C8E96 /* MusicAppApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,8 +357,12 @@
 				A07025572C277613001C8E96 /* ContentView.swift in Sources */,
 				A070259D2C278B6F001C8E96 /* Keys.swift in Sources */,
 				A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */,
+				A07025C22C27994C001C8E96 /* Playlist.swift in Sources */,
 				A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */,
+				A07025C62C2799B2001C8E96 /* Album.swift in Sources */,
 				A070257F2C277638001C8E96 /* User.swift in Sources */,
+				A07025C42C279974001C8E96 /* Artist.swift in Sources */,
+				A07025C02C279929001C8E96 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
