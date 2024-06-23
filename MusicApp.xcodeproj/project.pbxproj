@@ -16,7 +16,6 @@
 		A07025722C277614001C8E96 /* MusicAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025712C277614001C8E96 /* MusicAppUITestsLaunchTests.swift */; };
 		A070257F2C277638001C8E96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070257E2C277638001C8E96 /* User.swift */; };
 		A070259D2C278B6F001C8E96 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A070259C2C278B6F001C8E96 /* Keys.swift */; };
-		A070259F2C278BA9001C8E96 /* GoogleService-Info (14).plist in Resources */ = {isa = PBXBuildFile; fileRef = A070259E2C278BA9001C8E96 /* GoogleService-Info (14).plist */; };
 		A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025A22C278C2D001C8E96 /* AuthService.swift */; };
 		A07025A62C278C73001C8E96 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A07025A52C278C73001C8E96 /* FirebaseAppCheck */; };
 		A07025A82C278C73001C8E96 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A07025A72C278C73001C8E96 /* FirebaseAuth */; };
@@ -33,6 +32,10 @@
 		A07025C22C27994C001C8E96 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C12C27994C001C8E96 /* Playlist.swift */; };
 		A07025C42C279974001C8E96 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C32C279974001C8E96 /* Artist.swift */; };
 		A07025C62C2799B2001C8E96 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C52C2799B2001C8E96 /* Album.swift */; };
+		A07025C82C28ABCB001C8E96 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025C72C28ABCA001C8E96 /* SpotifyService.swift */; };
+		A07025CD2C28B05B001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
+		A07025CE2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
+		A07025CF2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,13 +68,13 @@
 		A07025712C277614001C8E96 /* MusicAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A070257E2C277638001C8E96 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A070259C2C278B6F001C8E96 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		A070259E2C278BA9001C8E96 /* GoogleService-Info (14).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (14).plist"; path = "../../../../Downloads/GoogleService-Info (14).plist"; sourceTree = "<group>"; };
 		A07025A22C278C2D001C8E96 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A07025BF2C279929001C8E96 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		A07025C12C27994C001C8E96 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		A07025C32C279974001C8E96 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A07025C52C2799B2001C8E96 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		A07025C72C28ABCA001C8E96 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,7 @@
 		A07025532C277613001C8E96 /* MusicApp */ = {
 			isa = PBXGroup;
 			children = (
+				A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */,
 				A07025BC2C2798D5001C8E96 /* App */,
 				A07025A12C278C25001C8E96 /* Service */,
 				A07025562C277613001C8E96 /* ContentView.swift */,
@@ -140,7 +144,6 @@
 				A07025582C277614001C8E96 /* Assets.xcassets */,
 				A070259B2C278B65001C8E96 /* Keys */,
 				A070255A2C277614001C8E96 /* Preview Content */,
-				A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */,
 			);
 			path = MusicApp;
 			sourceTree = "<group>";
@@ -166,7 +169,6 @@
 			children = (
 				A070256F2C277614001C8E96 /* MusicAppUITests.swift */,
 				A07025712C277614001C8E96 /* MusicAppUITestsLaunchTests.swift */,
-				A070259E2C278BA9001C8E96 /* GoogleService-Info (14).plist */,
 			);
 			path = MusicAppUITests;
 			sourceTree = "<group>";
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				A07025A22C278C2D001C8E96 /* AuthService.swift */,
+				A07025C72C28ABCA001C8E96 /* SpotifyService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -327,7 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A070259F2C278BA9001C8E96 /* GoogleService-Info (14).plist in Resources */,
+				A07025CD2C28B05B001C8E96 /* GoogleService-Info.plist in Resources */,
 				A070255C2C277614001C8E96 /* Preview Assets.xcassets in Resources */,
 				A07025592C277614001C8E96 /* Assets.xcassets in Resources */,
 			);
@@ -337,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07025CE2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07025CF2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07025C82C28ABCB001C8E96 /* SpotifyService.swift in Sources */,
 				A07025572C277613001C8E96 /* ContentView.swift in Sources */,
 				A070259D2C278B6F001C8E96 /* Keys.swift in Sources */,
 				A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */,
