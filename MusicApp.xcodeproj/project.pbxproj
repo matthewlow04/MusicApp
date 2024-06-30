@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A0163A832C31BFB4009CE295 /* RecentlyPlayed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */; };
+		A0163A872C31C455009CE295 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A862C31C455009CE295 /* SearchBar.swift */; };
 		A06F62432C31BCF10099892F /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A06F62422C31BCF10099892F /* FirebaseAppDistribution-Beta */; };
 		A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025542C277613001C8E96 /* MusicAppApp.swift */; };
 		A07025572C277613001C8E96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025562C277613001C8E96 /* ContentView.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayed.swift; sourceTree = "<group>"; };
+		A0163A862C31C455009CE295 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A07025512C277613001C8E96 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07025542C277613001C8E96 /* MusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppApp.swift; sourceTree = "<group>"; };
 		A07025562C277613001C8E96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		A07025C32C279974001C8E96 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A07025C52C2799B2001C8E96 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		A07025C72C28ABCA001C8E96 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		A0EDB4C12C31C6D500FAD806 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0163A852C31C42F009CE295 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A07025562C277613001C8E96 /* ContentView.swift */,
+				A0163A862C31C455009CE295 /* SearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A07025482C277613001C8E96 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +136,7 @@
 				A07025642C277614001C8E96 /* MusicAppTests */,
 				A070256E2C277614001C8E96 /* MusicAppUITests */,
 				A07025522C277613001C8E96 /* Products */,
+				A0EDB4C02C31C6D500FAD806 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,10 +156,10 @@
 				A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */,
 				A07025BC2C2798D5001C8E96 /* App */,
 				A07025A12C278C25001C8E96 /* Service */,
-				A07025562C277613001C8E96 /* ContentView.swift */,
 				A07025802C277677001C8E96 /* Model */,
 				A07025582C277614001C8E96 /* Assets.xcassets */,
 				A070259B2C278B65001C8E96 /* Keys */,
+				A0163A852C31C42F009CE295 /* View */,
 				A070255A2C277614001C8E96 /* Preview Content */,
 			);
 			path = MusicApp;
@@ -213,6 +226,14 @@
 				A07025542C277613001C8E96 /* MusicAppApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A0EDB4C02C31C6D500FAD806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0EDB4C12C31C6D500FAD806 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +391,7 @@
 				A0163A832C31BFB4009CE295 /* RecentlyPlayed.swift in Sources */,
 				A070259D2C278B6F001C8E96 /* Keys.swift in Sources */,
 				A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */,
+				A0163A872C31C455009CE295 /* SearchBar.swift in Sources */,
 				A07025C22C27994C001C8E96 /* Playlist.swift in Sources */,
 				A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */,
 				A07025C62C2799B2001C8E96 /* Album.swift in Sources */,

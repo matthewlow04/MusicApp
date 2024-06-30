@@ -14,7 +14,7 @@ struct Album: Codable, Identifiable {
     let external_urls: ExternalURLs
     let href: String
     let id: String
-    let images: [Image]
+    let images: [AlbumImage]
     let name: String
     let release_date: String
     let release_date_precision: String
@@ -23,7 +23,7 @@ struct Album: Codable, Identifiable {
     let uri: String
 }
 
-struct Image: Codable {
+struct AlbumImage: Codable {
     let height: Int
     let url: String
     let width: Int
