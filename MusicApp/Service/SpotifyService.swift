@@ -73,6 +73,7 @@ class SpotifyService: ObservableObject{
                 for track in playlistTracks {
                     print(track.track.name)
                     tracks.append(track.track)
+                    return tracks
                 }
                 
             }else{
@@ -86,7 +87,7 @@ class SpotifyService: ObservableObject{
         return nil
     }
     
-    func searchTrack(songName: String, accessToken: String) async{
+    func searchTrack(songName: String, accessToken: String) async -> [Track]?{
         
         var tracks: [Track] = []
         let url = URL(string: "https://api.spotify.com/v1/search?type=track&q=\(songName)")!
@@ -108,13 +109,55 @@ class SpotifyService: ObservableObject{
                     tracks.append(song)
 //                    print(song.album.images[0].url)
                 }
+
+                return tracks
+                
             }else{
                 print("Error: Invalid response")
+                return nil
 
             }
 
         } catch {
             print("Error: \(error)")
+            return nil
+        }
+    }
+    
+    func getRecentlyPlayed() async -> [Track]?{
+        
+        var tracks: [Track] = []
+        let url = URL(string: "https://api.spotify.com/v1/me/player/recently-played")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        do {
+            let (data,response) = try await URLSession.shared.data(for: request)
+            
+            if let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) {
+                let searchResults = try JSONDecoder().decode(RecentlyPlayedContainer.self, from: data)
+                
+                let songs = searchResults.items
+                
+                for song in songs {
+                    tracks.append(song.track)
+//                    print(song.album.images[0].url)
+                }
+                
+                return tracks
+            }else{
+                print("Error: Invalid response")
+                if let responseString = String(data: data, encoding: .utf8) {
+                   print("Response body: \(responseString)")
+               }
+                return nil
+
+            }
+
+        } catch {
+            print("Error: \(error)")
+            return nil
         }
     }
     
