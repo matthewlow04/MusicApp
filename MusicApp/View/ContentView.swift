@@ -23,6 +23,8 @@ struct ContentView: View {
            
         }
         
+        OuterChartView()
+        
         .padding()
     }
 }

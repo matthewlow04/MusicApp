@@ -16,4 +16,11 @@ struct User: Identifiable, Hashable, Codable{
     var lastName: String?
     var bio: String?
     let email: String
+    let url: String?
+}
+
+extension User{
+    static var MOCK_USERS: [User] = [
+        .init(id: "asdfasdfaf", username: "matthewlow", profileImageUrl: "https://i.scdn.co/image/ab67616d0000b2731e8fd05e38f85c0a52bf017f", bio: "awesome", email: "matthew7419@gmail.com", url: "spotify.com")
+    ]
 }
