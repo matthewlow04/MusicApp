@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		A00BC0672C559DB300B8E24D /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC0662C559DB300B8E24D /* SongView.swift */; };
 		A00BC06B2C559E5600B8E24D /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC06A2C559E5600B8E24D /* ScreenSize.swift */; };
+		A00BC06D2C55A1B800B8E24D /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC06C2C55A1B800B8E24D /* AlbumView.swift */; };
+		A00BC06F2C5724E500B8E24D /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC06E2C5724E500B8E24D /* Modifiers.swift */; };
+		A00BC0712C5725AD00B8E24D /* AlbumSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC0702C5725AD00B8E24D /* AlbumSongView.swift */; };
+		A00BC0742C5727B200B8E24D /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC0732C5727B200B8E24D /* StarView.swift */; };
 		A0163A832C31BFB4009CE295 /* RecentlyPlayed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */; };
 		A0163A872C31C455009CE295 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A862C31C455009CE295 /* SearchBar.swift */; };
 		A06F62432C31BCF10099892F /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A06F62422C31BCF10099892F /* FirebaseAppDistribution-Beta */; };
@@ -66,6 +70,10 @@
 /* Begin PBXFileReference section */
 		A00BC0662C559DB300B8E24D /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
 		A00BC06A2C559E5600B8E24D /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		A00BC06C2C55A1B800B8E24D /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		A00BC06E2C5724E500B8E24D /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		A00BC0702C5725AD00B8E24D /* AlbumSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumSongView.swift; sourceTree = "<group>"; };
+		A00BC0732C5727B200B8E24D /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayed.swift; sourceTree = "<group>"; };
 		A0163A862C31C455009CE295 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A07025512C277613001C8E96 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,19 +142,31 @@
 			isa = PBXGroup;
 			children = (
 				A00BC06A2C559E5600B8E24D /* ScreenSize.swift */,
+				A00BC06E2C5724E500B8E24D /* Modifiers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A00BC0722C5725B900B8E24D /* SpotifyData */ = {
+			isa = PBXGroup;
+			children = (
+				A00BC0662C559DB300B8E24D /* SongView.swift */,
+				A00BC06C2C55A1B800B8E24D /* AlbumView.swift */,
+				A00BC0702C5725AD00B8E24D /* AlbumSongView.swift */,
+				A00BC0732C5727B200B8E24D /* StarView.swift */,
+			);
+			path = SpotifyData;
 			sourceTree = "<group>";
 		};
 		A0163A852C31C42F009CE295 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A00BC0722C5725B900B8E24D /* SpotifyData */,
 				A0EDB4C72C3201E100FAD806 /* ProfilePage */,
 				A07025562C277613001C8E96 /* ContentView.swift */,
 				A0163A862C31C455009CE295 /* SearchBar.swift */,
 				A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */,
 				A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */,
-				A00BC0662C559DB300B8E24D /* SongView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,11 +444,15 @@
 				A070259D2C278B6F001C8E96 /* Keys.swift in Sources */,
 				A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */,
 				A0163A872C31C455009CE295 /* SearchBar.swift in Sources */,
+				A00BC06F2C5724E500B8E24D /* Modifiers.swift in Sources */,
 				A0EDB4C92C3201EE00FAD806 /* ProfileHeaderView.swift in Sources */,
+				A00BC0712C5725AD00B8E24D /* AlbumSongView.swift in Sources */,
 				A00BC06B2C559E5600B8E24D /* ScreenSize.swift in Sources */,
 				A07025C22C27994C001C8E96 /* Playlist.swift in Sources */,
+				A00BC0742C5727B200B8E24D /* StarView.swift in Sources */,
 				A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */,
 				A07025C62C2799B2001C8E96 /* Album.swift in Sources */,
+				A00BC06D2C55A1B800B8E24D /* AlbumView.swift in Sources */,
 				A070257F2C277638001C8E96 /* User.swift in Sources */,
 				A07025C42C279974001C8E96 /* Artist.swift in Sources */,
 				A00BC0672C559DB300B8E24D /* SongView.swift in Sources */,

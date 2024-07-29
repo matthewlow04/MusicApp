@@ -10,13 +10,14 @@ import SwiftUI
 struct SongView: View {
     var body: some View {
         HStack{
-            AsyncImage(url: URL(string: "")) { image in
+            AsyncImage(url: URL(string: "https://e-cdn-images.dzcdn.net/images/cover/586eb9f8e98f13c7be5c1835ae1e168d/500x500-000000-80-0-0.jpg")) { image in
                 image.resizable()
             } placeholder: {
                 Color.gray.opacity(0.5)
             }
             .frame(width: 100, height: 100)
-            .clipShape(RoundedRectangle(cornerRadius: 3))
+            .clipShape(RoundedRectangle(cornerRadius: 5))
+            .padding(.trailing)
             
             VStack{
                 HStack{
@@ -35,7 +36,7 @@ struct SongView: View {
                         .opacity(0.5)
                     Spacer()
                     Text("K-pop, HipHop")
-                        .font(.subheadline)
+                        .font(.footnote)
                 }
                 HStack{
                     VStack(alignment : .leading){
