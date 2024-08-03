@@ -15,6 +15,15 @@
 		A00BC0742C5727B200B8E24D /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00BC0732C5727B200B8E24D /* StarView.swift */; };
 		A0163A832C31BFB4009CE295 /* RecentlyPlayed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */; };
 		A0163A872C31C455009CE295 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0163A862C31C455009CE295 /* SearchBar.swift */; };
+		A0196D9B2C5E9BE5001E3635 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196D9A2C5E9BE5001E3635 /* RootView.swift */; };
+		A0196D9E2C5E9C54001E3635 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196D9D2C5E9C54001E3635 /* RootViewModel.swift */; };
+		A0196DA02C5E9DB8001E3635 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196D9F2C5E9DB8001E3635 /* LoginView.swift */; };
+		A0196DA22C5E9DC4001E3635 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DA12C5E9DC4001E3635 /* LoginViewModel.swift */; };
+		A0196DA42C5E9F5C001E3635 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DA32C5E9F5C001E3635 /* AddEmailView.swift */; };
+		A0196DA62C5E9F8E001E3635 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DA52C5E9F8E001E3635 /* RegistrationViewModel.swift */; };
+		A0196DA82C5EA010001E3635 /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DA72C5EA010001E3635 /* CreateUsernameView.swift */; };
+		A0196DAA2C5EA036001E3635 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DA92C5EA036001E3635 /* CreatePasswordView.swift */; };
+		A0196DAC2C5EA05D001E3635 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0196DAB2C5EA05D001E3635 /* CompleteSignUpView.swift */; };
 		A06F62432C31BCF10099892F /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A06F62422C31BCF10099892F /* FirebaseAppDistribution-Beta */; };
 		A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025542C277613001C8E96 /* MusicAppApp.swift */; };
 		A07025572C277613001C8E96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07025562C277613001C8E96 /* ContentView.swift */; };
@@ -76,6 +85,15 @@
 		A00BC0732C5727B200B8E24D /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		A0163A822C31BFB4009CE295 /* RecentlyPlayed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyPlayed.swift; sourceTree = "<group>"; };
 		A0163A862C31C455009CE295 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		A0196D9A2C5E9BE5001E3635 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A0196D9D2C5E9C54001E3635 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		A0196D9F2C5E9DB8001E3635 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A0196DA12C5E9DC4001E3635 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A0196DA32C5E9F5C001E3635 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
+		A0196DA52C5E9F8E001E3635 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A0196DA72C5EA010001E3635 /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		A0196DA92C5EA036001E3635 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
+		A0196DAB2C5EA05D001E3635 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		A07025512C277613001C8E96 /* MusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07025542C277613001C8E96 /* MusicAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAppApp.swift; sourceTree = "<group>"; };
 		A07025562C277613001C8E96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,8 +185,24 @@
 				A0163A862C31C455009CE295 /* SearchBar.swift */,
 				A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */,
 				A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */,
+				A0196D9A2C5E9BE5001E3635 /* RootView.swift */,
+				A0196D9F2C5E9DB8001E3635 /* LoginView.swift */,
+				A0196DA32C5E9F5C001E3635 /* AddEmailView.swift */,
+				A0196DA72C5EA010001E3635 /* CreateUsernameView.swift */,
+				A0196DA92C5EA036001E3635 /* CreatePasswordView.swift */,
+				A0196DAB2C5EA05D001E3635 /* CompleteSignUpView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A0196D9C2C5E9C35001E3635 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0196D9D2C5E9C54001E3635 /* RootViewModel.swift */,
+				A0196DA12C5E9DC4001E3635 /* LoginViewModel.swift */,
+				A0196DA52C5E9F8E001E3635 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A07025482C277613001C8E96 = {
@@ -201,6 +235,7 @@
 				A07025802C277677001C8E96 /* Model */,
 				A07025582C277614001C8E96 /* Assets.xcassets */,
 				A070259B2C278B65001C8E96 /* Keys */,
+				A0196D9C2C5E9C35001E3635 /* ViewModel */,
 				A0163A852C31C42F009CE295 /* View */,
 				A00BC0692C559E4000B8E24D /* Helpers */,
 				A070255A2C277614001C8E96 /* Preview Content */,
@@ -439,14 +474,21 @@
 			files = (
 				A07025C82C28ABCB001C8E96 /* SpotifyService.swift in Sources */,
 				A0EDB4C42C31C9FF00FAD806 /* ChartView.swift in Sources */,
+				A0196D9E2C5E9C54001E3635 /* RootViewModel.swift in Sources */,
 				A07025572C277613001C8E96 /* ContentView.swift in Sources */,
 				A0163A832C31BFB4009CE295 /* RecentlyPlayed.swift in Sources */,
 				A070259D2C278B6F001C8E96 /* Keys.swift in Sources */,
+				A0196DA02C5E9DB8001E3635 /* LoginView.swift in Sources */,
+				A0196DAA2C5EA036001E3635 /* CreatePasswordView.swift in Sources */,
 				A07025A32C278C2D001C8E96 /* AuthService.swift in Sources */,
 				A0163A872C31C455009CE295 /* SearchBar.swift in Sources */,
+				A0196DA42C5E9F5C001E3635 /* AddEmailView.swift in Sources */,
+				A0196DA62C5E9F8E001E3635 /* RegistrationViewModel.swift in Sources */,
 				A00BC06F2C5724E500B8E24D /* Modifiers.swift in Sources */,
 				A0EDB4C92C3201EE00FAD806 /* ProfileHeaderView.swift in Sources */,
 				A00BC0712C5725AD00B8E24D /* AlbumSongView.swift in Sources */,
+				A0196D9B2C5E9BE5001E3635 /* RootView.swift in Sources */,
+				A0196DA22C5E9DC4001E3635 /* LoginViewModel.swift in Sources */,
 				A00BC06B2C559E5600B8E24D /* ScreenSize.swift in Sources */,
 				A07025C22C27994C001C8E96 /* Playlist.swift in Sources */,
 				A00BC0742C5727B200B8E24D /* StarView.swift in Sources */,
@@ -455,8 +497,10 @@
 				A00BC06D2C55A1B800B8E24D /* AlbumView.swift in Sources */,
 				A070257F2C277638001C8E96 /* User.swift in Sources */,
 				A07025C42C279974001C8E96 /* Artist.swift in Sources */,
+				A0196DAC2C5EA05D001E3635 /* CompleteSignUpView.swift in Sources */,
 				A00BC0672C559DB300B8E24D /* SongView.swift in Sources */,
 				A07025C02C279929001C8E96 /* Track.swift in Sources */,
+				A0196DA82C5EA010001E3635 /* CreateUsernameView.swift in Sources */,
 				A0EDB4C62C31CAFE00FAD806 /* OuterChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

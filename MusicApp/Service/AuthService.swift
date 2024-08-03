@@ -18,8 +18,7 @@ class AuthService {
     static let shared = AuthService()
     
     init(){
-        //check if user is logged in
-        
+     
         Task{
             try await loadUserData()
         }
@@ -54,7 +53,7 @@ class AuthService {
     func loadUserData() async throws{
         self.userSession = Auth.auth().currentUser
 
-        guard let currentUid = self.userSession?.uid else { print("FAILED"); return }
+        guard let currentUid = self.userSession?.uid else { print("No User Data"); return }
         let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
      
         self.currentUser = try? snapshot.data(as: User.self)
