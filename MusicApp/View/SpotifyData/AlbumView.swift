@@ -118,7 +118,7 @@ struct AlbumView: View {
                     AlbumSongView(number: 4, rating: 0.4)
                     AlbumSongView(number: 5, rating: 0.4)
                 }
-            }
+            }.scrollIndicators(.hidden)
             
         }
         .padding()

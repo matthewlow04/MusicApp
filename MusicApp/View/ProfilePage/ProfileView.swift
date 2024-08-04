@@ -21,7 +21,7 @@ struct ProfileView: View {
                 ProfileRowView(track: UITestTrack.MOCK_TRACKS, header: "Recent Reviews")
          
                 OuterChartView()
-            }
+            }.scrollIndicators(.hidden)
          
         }
         .padding(.horizontal, 20)

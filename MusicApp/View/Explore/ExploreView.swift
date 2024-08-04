@@ -30,6 +30,7 @@ struct ExploreView: View {
                                     HStack{
                                         VStack{
                                             Text("The Low End Theory")
+                                                .font(.headline)
                                             Text("A Tribe Called Quest")
                                         }
                                         
@@ -70,7 +71,7 @@ struct ExploreView: View {
                             
                             Spacer()
                             
-                            Text("View More")
+                            Button("View More") {}
                                 .font(.footnote)
                         }
                         .modifier(HeaderModifier())
@@ -87,7 +88,7 @@ struct ExploreView: View {
                                     .clipShape(RoundedRectangle(cornerRadius: 3))
                                 }
                             }
-                        }
+                        }.scrollIndicators(.hidden)
                         
                     }
                     
@@ -98,7 +99,7 @@ struct ExploreView: View {
                             
                             Spacer()
                             
-                            Text("View More")
+                            Button("View More") {}
                                 .font(.footnote)
                         }
                         .modifier(HeaderModifier())
@@ -115,7 +116,7 @@ struct ExploreView: View {
                                     .clipShape(RoundedRectangle(cornerRadius: 3))
                                 }
                             }
-                        }
+                        }.scrollIndicators(.hidden)
                         
                     }
                     
@@ -126,7 +127,7 @@ struct ExploreView: View {
                             
                             Spacer()
                             
-                            Text("View More")
+                            Button("View More") {}
                                 .font(.footnote)
                         }
                         .modifier(HeaderModifier())
@@ -152,7 +153,7 @@ struct ExploreView: View {
                 
                 
                 
-            }
+            }.scrollIndicators(.hidden)
         }
         .padding()
     }

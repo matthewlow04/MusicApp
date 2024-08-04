@@ -12,11 +12,23 @@ struct RootView: View {
     @StateObject var registrationViewModel = RegistrationViewModel()
     var body: some View {
         Group{
-            if viewModel.userSession == nil{
+            if $viewModel.userSession == nil{
                 LoginView()
                     .environmentObject(registrationViewModel)
             } else if let currentUser = viewModel.currentUser {
-                Text("Welcome " + currentUser.username)
+                TabView{
+                    HomeView(user: currentUser)
+                        .tabItem{Label("Home", systemImage: "house.fill")}
+                    ExploreView()
+                        .tabItem{Label("Explore", systemImage: "magnifyingglass")}
+                    Text("Friends")
+                        .tabItem{Label("Friends", systemImage: "person.3.fill")}
+                    ProfileView()
+                        .tabItem{Label("Profile", systemImage: "person.fill")}
+                    
+                }
+               
+               
             }
         }
     }
