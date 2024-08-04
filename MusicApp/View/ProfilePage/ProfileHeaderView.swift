@@ -10,22 +10,46 @@ import SwiftUI
 struct ProfileHeaderView: View {
     var user: User
     var body: some View {
-        HStack(spacing: 20){
-            Circle()
-                .frame(width: 88, height: 88)
-            VStack(alignment: .leading, spacing: 12){
-                Text(user.username)
-                    .font(Font.system(size: 18, weight: .semibold))
-                Text(user.bio ?? "")
-                    .font(Font.system(size: 18))
-                Text(user.url!)
-                    .font(Font.system(size: 12))
+        VStack(spacing: 20){
+            HStack(spacing: 20){
+                Circle()
+                    .frame(width: 88, height: 88)
+                VStack(alignment: .leading, spacing: 12){
+                    Text(user.username)
+                        .font(Font.system(size: 18, weight: .semibold))
+                    HStack{
+                        Image(systemName: "link")
+                        Text(user.url!)
+                            .font(Font.system(size: 12))
+
+                    }
+                }
+                Spacer()
+               
+                
             }
-            Spacer()
-           
-            
+
+            HStack{
+                Button("Edit Profile"){
+                    
+                }
+                .foregroundStyle(.foreground)
+                .frame(maxWidth: .infinity)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                Button("Share Profile"){
+                    
+                }
+                .foregroundStyle(.foreground)
+                .frame(maxWidth: .infinity)
+                .padding(12)
+                .background(Color(.systemGray6))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
         }
         .padding()
+        
     
     
     }

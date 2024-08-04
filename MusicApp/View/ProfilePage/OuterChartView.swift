@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OuterChartView: View {
-    @State private var numbers: [Double] = [1,2,3,4,2,4,6,5,8,9,6,10, 2, 2, 2,2,2,2,2]
+    @State private var numbers: [Double] = [1,2,3,4,2,4,5, 2, 2, 1.5,2,2,2,2,2]
     var body: some View {
            let occurrences = countOccurrences(of: numbers)
            

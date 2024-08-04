@@ -54,6 +54,8 @@
 		A07025CD2C28B05B001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
 		A07025CE2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
 		A07025CF2C28B05C001C8E96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A07025BB2C278C9E001C8E96 /* GoogleService-Info.plist */; };
+		A0B7E3FC2C5FF07600929B4A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7E3FB2C5FF07600929B4A /* ProfileView.swift */; };
+		A0B7E3FE2C5FF0B700929B4A /* ProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7E3FD2C5FF0B700929B4A /* ProfileRowView.swift */; };
 		A0EDB4C42C31C9FF00FAD806 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */; };
 		A0EDB4C62C31CAFE00FAD806 /* OuterChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */; };
 		A0EDB4C92C3201EE00FAD806 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EDB4C82C3201EE00FAD806 /* ProfileHeaderView.swift */; };
@@ -113,6 +115,8 @@
 		A07025C32C279974001C8E96 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A07025C52C2799B2001C8E96 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		A07025C72C28ABCA001C8E96 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		A0B7E3FB2C5FF07600929B4A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A0B7E3FD2C5FF0B700929B4A /* ProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRowView.swift; sourceTree = "<group>"; };
 		A0EDB4C12C31C6D500FAD806 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OuterChartView.swift; sourceTree = "<group>"; };
@@ -179,18 +183,12 @@
 		A0163A852C31C42F009CE295 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0B7E3FA2C5FEDFD00929B4A /* Login */,
 				A00BC0722C5725B900B8E24D /* SpotifyData */,
 				A0EDB4C72C3201E100FAD806 /* ProfilePage */,
 				A07025562C277613001C8E96 /* ContentView.swift */,
 				A0163A862C31C455009CE295 /* SearchBar.swift */,
-				A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */,
-				A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */,
 				A0196D9A2C5E9BE5001E3635 /* RootView.swift */,
-				A0196D9F2C5E9DB8001E3635 /* LoginView.swift */,
-				A0196DA32C5E9F5C001E3635 /* AddEmailView.swift */,
-				A0196DA72C5EA010001E3635 /* CreateUsernameView.swift */,
-				A0196DA92C5EA036001E3635 /* CreatePasswordView.swift */,
-				A0196DAB2C5EA05D001E3635 /* CompleteSignUpView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +304,18 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		A0B7E3FA2C5FEDFD00929B4A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0196D9F2C5E9DB8001E3635 /* LoginView.swift */,
+				A0196DA72C5EA010001E3635 /* CreateUsernameView.swift */,
+				A0196DA92C5EA036001E3635 /* CreatePasswordView.swift */,
+				A0196DAB2C5EA05D001E3635 /* CompleteSignUpView.swift */,
+				A0196DA32C5E9F5C001E3635 /* AddEmailView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		A0EDB4C02C31C6D500FAD806 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +328,10 @@
 			isa = PBXGroup;
 			children = (
 				A0EDB4C82C3201EE00FAD806 /* ProfileHeaderView.swift */,
+				A0B7E3FB2C5FF07600929B4A /* ProfileView.swift */,
+				A0B7E3FD2C5FF0B700929B4A /* ProfileRowView.swift */,
+				A0EDB4C32C31C9FF00FAD806 /* ChartView.swift */,
+				A0EDB4C52C31CAFD00FAD806 /* OuterChartView.swift */,
 			);
 			path = ProfilePage;
 			sourceTree = "<group>";
@@ -490,6 +504,8 @@
 				A0196D9B2C5E9BE5001E3635 /* RootView.swift in Sources */,
 				A0196DA22C5E9DC4001E3635 /* LoginViewModel.swift in Sources */,
 				A00BC06B2C559E5600B8E24D /* ScreenSize.swift in Sources */,
+				A0B7E3FC2C5FF07600929B4A /* ProfileView.swift in Sources */,
+				A0B7E3FE2C5FF0B700929B4A /* ProfileRowView.swift in Sources */,
 				A07025C22C27994C001C8E96 /* Playlist.swift in Sources */,
 				A00BC0742C5727B200B8E24D /* StarView.swift in Sources */,
 				A07025552C277613001C8E96 /* MusicAppApp.swift in Sources */,

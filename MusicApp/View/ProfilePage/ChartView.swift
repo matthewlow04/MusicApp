@@ -13,9 +13,8 @@ struct ChartView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Ratings")
-                .font(.title2)
-                .bold()
+            Text("Rating Distribution")
+                .font(Font.system(size: 18, weight: .semibold))
                 .padding(.bottom, 10)
             
             Chart {
@@ -59,7 +58,7 @@ struct ChartView: View {
 func countOccurrences(of numbers: [Double]) -> [Double: Int] {
     var counts = [Double: Int]()
     
-    for number in stride(from: 1.0, through: 10.0, by: 0.5) {
+    for number in stride(from: 1.0, through: 5.0, by: 0.5) {
         counts[number] = 0
     }
     
