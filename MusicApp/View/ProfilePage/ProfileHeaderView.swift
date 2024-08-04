@@ -16,7 +16,7 @@ struct ProfileHeaderView: View {
                     .frame(width: 88, height: 88)
                 VStack(alignment: .leading, spacing: 12){
                     Text(user.username)
-                        .font(Font.system(size: 18, weight: .semibold))
+                        .modifier(HeaderModifier())
                     HStack{
                         Image(systemName: "link")
                         Text(user.url!)

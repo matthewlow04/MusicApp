@@ -8,7 +8,7 @@ struct ProfileRowView: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Text(header)
-                    .font(Font.system(size: 18, weight: .semibold))
+                    .modifier(HeaderModifier())
             }
             
             let screenWidth = UIScreen.main.bounds.width

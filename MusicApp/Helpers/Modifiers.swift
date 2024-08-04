@@ -16,6 +16,13 @@ struct TitleModifier: ViewModifier {
     }
 }
 
+struct HeaderModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(Font.system(size: 18, weight: .semibold))
+    }
+}
+
 struct ButtonModifier: ViewModifier{
     func body(content: Content) -> some View {
         content
@@ -45,5 +52,33 @@ struct CreateAccountButtonModifier: ViewModifier{
             .frame(width: 360, height: 44)
             .background(.blue)
             .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+}
+
+struct SearchBarModifier: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .padding(.horizontal)
+            .padding(.vertical, 10)
+            .overlay{
+                Capsule()
+                    .stroke(lineWidth: 0.5)
+                    .foregroundStyle(Color(.systemGray))
+                    .shadow(color: .black.opacity(0.4), radius: 8)
+            }
+    }
+}
+
+struct SearchFilterModifier: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .padding(.horizontal)
+            .padding(.vertical, 10)
+            .foregroundStyle(.foreground)
+            .overlay{
+                Capsule()
+                    .stroke(lineWidth: 0.5)
+                    .foregroundStyle(Color(.systemGray))
+            }
     }
 }
