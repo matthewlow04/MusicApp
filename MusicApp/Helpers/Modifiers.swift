@@ -78,7 +78,20 @@ struct SearchFilterModifier: ViewModifier{
             .overlay{
                 Capsule()
                     .stroke(lineWidth: 0.5)
-                    .foregroundStyle(Color(.systemGray))
+                    .opacity(0.5)
+            }
+    }
+}
+
+struct FriendsFilterModifier: ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .padding(.horizontal)
+            .padding(.vertical, 10)
+            .foregroundStyle(.foreground)
+            .overlay{
+                Capsule()
+                    .stroke(lineWidth: 1)
             }
     }
 }

@@ -50,28 +50,15 @@ struct FriendsView: View {
          
             
             HStack(spacing: 20) {
-                Button {
+                Button("Ratings"){
                     
-                } label: {
-                    Text("Ratings")
-                        .padding(5)
-                        .overlay(
-                            Capsule()
-                                .stroke(Color.blue, lineWidth: 1)
-                            
-                        )
-                        .opacity(0.3)
                 }
-                Button {
+                .modifier(FriendsFilterModifier())
+                .opacity(0.5)
+                Button("Concerts"){
                     
-                } label: {
-                    Text("Concerts")
-                        .padding(5)
-                        .overlay(
-                            Capsule()
-                                .stroke(Color.blue, lineWidth: 1)
-                        )
                 }
+                .modifier(FriendsFilterModifier())
                 
                 
             }
