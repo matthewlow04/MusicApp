@@ -21,7 +21,7 @@ struct RootView: View {
                         .tabItem{Label("Home", systemImage: "house.fill")}
                     ExploreView()
                         .tabItem{Label("Explore", systemImage: "magnifyingglass")}
-                    Text("Friends")
+                    FriendsView()
                         .tabItem{Label("Friends", systemImage: "person.3.fill")}
                     ProfileView()
                         .tabItem{Label("Profile", systemImage: "person.fill")}
